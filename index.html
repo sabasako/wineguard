@@ -7,6 +7,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="wineguard icon" href="images/logo.png" type="image/x-icon" />
+
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
@@ -17,18 +20,25 @@
     <div id="page-wrapper">
       <!-- Header -->
       <header id="header" class="alt">
-        <h1><a href="index.html">WineGuard</a></h1>
+        <h1 class="wineguard-heading">
+          <img
+            class="wineguard-logo"
+            src="images/logo.png"
+            alt="WineGuard logo"
+          />
+          <a href="index.html">WineGuard</a>
+        </h1>
         <nav id="nav">
           <ul>
             <li class="special">
               <a href="#menu" class="menuToggle"><span>მენიუ</span></a>
               <div id="menu">
                 <ul>
-                  <li><a href="index.html">მთავარი</a></li>
-                  <li><a href="generic.html">Generic</a></li>
-                  <li><a href="elements.html">Elements</a></li>
-                  <li><a href="#">Sign Up</a></li>
-                  <li><a href="#">Log In</a></li>
+                  <li><a href="#banner">მთავარი</a></li>
+                  <li><a href="#one">Generic</a></li>
+                  <li><a href="#two">ნაწილები</a></li>
+                  <li><a href="#three">ფასი</a></li>
+                  <li><a href="#cta">დაგვიკავშირდით</a></li>
                 </ul>
               </div>
             </li>
@@ -39,7 +49,14 @@
       <!-- Banner -->
       <section id="banner">
         <div class="inner">
-          <h2>WineGuard</h2>
+          <h2 class="wineguard-heading">
+            <img
+              class="wineguard-logo"
+              src="images/logo.png"
+              alt="WineGuard logo"
+            />
+            WineGuard
+          </h2>
           <p>
             ქვევრის ვაკუმური თავსახური, რომელიც <br />
             მეღვინეებს საშუალებას აძლევს, დიდხანს <br />
@@ -58,7 +75,7 @@
           <header class="major">
             <h2>
               შეგიძლია ჩვენი პროდუქტი, გამოიყენო<br />
-              ნებისმიერ პირობებში, ნებისმიერ ადგილას
+              ნებისმიერ პირობაში, ნებისმიერ ადგილას
             </h2>
             <p>
               ელექტრონულად მართვადი ქვევრის თავსახური<br />
@@ -150,32 +167,42 @@
           ვაკუმური თავსახურის შემადგენელი ნაწილებია:
         </h1>
         <section class="spotlight">
-          <div class="image"><img src="images/pic01.jpg" alt="" /></div>
+          <div class="image">
+            <img src="images/tavsaxuri.webp" alt="" />
+          </div>
           <div class="content">
-            <h2 class="parts-subheading">ჭკვიანი თვასახური</h2>
+            <h2 class="parts-subheading">ჭკვიანი თავსახური</h2>
             <p>
-              უკავშირდება ტუმბოს და აქვს სენსორები, რომლებიც დროულად აღმოაჩენენ
-              დაზიანებას
+              შუშის გამჭირვალე დისკი, რომელიც რეზინის რგოლით მჭიდროდ ეცობა
+              ქვევრს მასში ვაკუმის შესანარჩუნებლად. იგი აღჭურვილია წნევის
+              სენსორით და გადამცემი მოდულით, რათა მოგვაწოდოს ინფორმაცია მობილურ
+              აპლიკაციაზე და ავარიულ შემთხვევაში თავად მიიღოს გადაწყვეტილება
+              ვაკუმის ჩართვასთან დაკავშირებით
             </p>
           </div>
         </section>
         <section class="spotlight">
-          <div class="image"><img src="images/pic02.jpg" alt="" /></div>
+          <div class="image"><img src="images/tumbo.webp" alt="" /></div>
           <div class="content">
             <h2 class="parts-subheading">მულტი ტუმბო</h2>
             <p>
-              შეგვიძლია ერთდროულად დავუკავშოროთ რამდენიმე თავსახურს, შესაბამისად
-              ამოვტუმბოთ ჰაერი რამდენიმე ქვევრიდან
+              მოწყობილება, რომელიც ქვევრიდან ამოტუმბავს ჰაერს, უზრუნველოფს
+              ვაკუმის შექმნას და მის შენარჩუნებას. შეგვიძლია ერთდროულად
+              დავუკავშოროთ რამდენიმე თავსახურს, შესაბამისად, ამოვტუმბოთ ჰაერი
+              რამდენიმე ქვევრიდან
             </p>
           </div>
         </section>
         <section class="spotlight">
-          <div class="image"><img src="images/pic03.jpg" alt="" /></div>
+          <div class="image"><img src="images/app.webp" alt="" /></div>
           <div class="content">
             <h2 class="parts-subheading">სადაზღვეო სერვისი</h2>
             <p>
-              აპლიკაციის მეშვეობით მეღვინეები შეძლებენ, მუდმივად აკონტროლონ
-              წნევა ქვევრში. დისტანციურად ჩართონ ან გამორთონ ტუმბო
+              მეღვინეებს საშუალებას მისცემს, მობილური აპლიკაციის მეშვეობით
+              დისტანციურად მართონ მოწყობილობა, აკონტროლონ ქვევრში წნევის დონე და
+              დაუყოვნებლივ მიიღონ ინფორმაცია ვაკუმის დაზიანების შემთხვევაში. იმ
+              შემთხვევაში, თუ მოდული დაზიანდა, ჩვენ უზრუნველვყოფთ მის
+              ტექ-ინსპექტირებას.
             </p>
           </div>
         </section>
@@ -244,7 +271,7 @@
       <section id="cta" class="wrapper style4">
         <div class="inner">
           <header>
-            <h2>Arcue ut vel commodo</h2>
+            <h2>დაიცავით ღვინო WineGuard-ით</h2>
             <p>
               Aliquam ut ex ut augue consectetur interdum endrerit imperdiet
               amet eleifend fringilla.
@@ -252,7 +279,7 @@
           </header>
           <ul class="actions stacked">
             <li><a href="#" class="button-order">შეუკვეთე</a></li>
-            <li><a href="#" class="button fit">გაიგე მეტი</a></li>
+            <li><a href="#two " class="button fit">გაიგე მეტი</a></li>
           </ul>
         </div>
       </section>

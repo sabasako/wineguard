@@ -168,6 +168,7 @@ textarea {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -3982,21 +3983,21 @@ body.is-preload #banner:after {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-image: -webkit-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-image: -ms-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -4142,21 +4143,21 @@ body.landing #page-wrapper {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-image: -webkit-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-image: -ms-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -4179,21 +4180,21 @@ body.is-mobile.landing .wrapper.style4 {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-image: -webkit-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-image: -ms-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/banner.jpg");
+    url("../../images/banner.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4226,7 +4227,7 @@ body.is-mobile.landing #footer {
 }
 
 .parts-heading {
-  padding: 50px 0 30px;
+  padding: 60px 0 40px;
   margin: 0;
   text-align: center;
   font-size: 24px;
@@ -4236,4 +4237,20 @@ body.is-mobile.landing #footer {
 
 .parts-subheading {
   letter-spacing: 1px;
+}
+
+.wineguard-logo {
+  width: 32px;
+  height: auto;
+}
+
+.wineguard-heading {
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#two {
+  /* padding-top: 50px; */
 }
