@@ -10,10 +10,13 @@
     <link rel="icon" href="images/logo.png" type="image/x-icon" />
     <link rel="wineguard icon" href="images/logo.png" type="image/x-icon" />
 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <script src="assets/js/swiper-bundle.min.js"></script>
   </head>
   <body class="landing is-preload">
     <div class="modal-background"></div>
@@ -122,13 +125,10 @@
       <section id="one" class="wrapper style1 special">
         <div class="inner">
           <header class="major">
-            <h2>
-              შეგიძლია ჩვენი პროდუქტი, გამოიყენო<br />
-              ნებისმიერ პირობაში, ნებისმიერ ადგილას
-            </h2>
+            <h2>დაიცავით ღვინო WineGuard-ით</h2>
             <p>
-              ელექტრონულად მართვადი ქვევრის თავსახური<br />
-              შეგიძლია ტელეფონიდან მართო
+              ელექტრონულად მართვადი ქვევრის თავსახური,<br />
+              რომელიც შეგიძლია, ტელეფონიდან მართო
             </p>
           </header>
           <ul class="icons major">
@@ -217,44 +217,229 @@
         </h1>
         <section class="spotlight">
           <div class="image">
-            <img src="images/tavsaxuri.webp" alt="" />
+            <img class="more-image" src="images/tavsaxuri.webp" alt="" />
           </div>
           <div class="content">
-            <h2 class="parts-subheading">ჭკვიანი თავსახური</h2>
-            <p>
-              შუშის გამჭირვალე დისკი, რომელიც რეზინის რგოლით მჭიდროდ ეცობა
-              ქვევრს მასში ვაკუმის შესანარჩუნებლად. იგი აღჭურვილია წნევის
-              სენსორით და გადამცემი მოდულით, რათა მოგვაწოდოს ინფორმაცია მობილურ
-              აპლიკაციაზე და ავარიულ შემთხვევაში თავად მიიღოს გადაწყვეტილება
-              ვაკუმის ჩართვასთან დაკავშირებით
-            </p>
+            <h2 class="parts-subheading">
+              ჭკვიანი თავსახური
+              <div class="drop-down-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#fff"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+            </h2>
+            <div class="more-content">
+              <p>
+                შუშის გამჭირვალე დისკი, რომელიც რეზინის რგოლით მჭიდროდ ეცობა
+                ქვევრს მასში ვაკუუმის შესანარჩუნებლად. იგი აღჭურვილია წნევის
+                სენსორით და გადამცემი მოდულით, რათა მოგვაწოდოს ინფორმაცია
+                მობილურ აპლიკაციაზე და ავარიულ შემთხვევაში თავად მიიღოს
+                გადაწყვეტილება ვაკუუმის ჩართვასთან დაკავშირებით
+              </p>
+            </div>
           </div>
         </section>
         <section class="spotlight">
-          <div class="image"><img src="images/tumbo.webp" alt="" /></div>
+          <div class="image">
+            <img class="more-image" src="images/tumbo.webp" alt="" />
+          </div>
           <div class="content">
-            <h2 class="parts-subheading">მულტი ტუმბო</h2>
-            <p>
-              მოწყობილება, რომელიც ქვევრიდან ამოტუმბავს ჰაერს, უზრუნველოფს
-              ვაკუმის შექმნას და მის შენარჩუნებას. შეგვიძლია ერთდროულად
-              დავუკავშოროთ რამდენიმე თავსახურს, შესაბამისად, ამოვტუმბოთ ჰაერი
-              რამდენიმე ქვევრიდან
-            </p>
+            <h2 class="parts-subheading">
+              მულტი ტუმბო
+              <div class="drop-down-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#fff"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+            </h2>
+            <div class="more-content">
+              <p>
+                მოწყობილება, რომელიც ქვევრიდან ამოტუმბავს ჰაერს, უზრუნველოფს
+                ვაკუუმის შექმნას და მის შენარჩუნებას. შეგვიძლია ერთდროულად
+                დავუკავშოროთ რამდენიმე თავსახურს, შესაბამისად, ამოვტუმბოთ ჰაერი
+                რამდენიმე ქვევრიდან
+              </p>
+            </div>
           </div>
         </section>
         <section class="spotlight">
-          <div class="image"><img src="images/app.webp" alt="" /></div>
+          <div class="image">
+            <img class="more-image" src="images/app.webp" alt="" />
+          </div>
           <div class="content">
-            <h2 class="parts-subheading">სადაზღვეო სერვისი</h2>
-            <p>
-              მეღვინეებს საშუალებას მისცემს, მობილური აპლიკაციის მეშვეობით
-              დისტანციურად მართონ მოწყობილობა, აკონტროლონ ქვევრში წნევის დონე და
-              დაუყოვნებლივ მიიღონ ინფორმაცია ვაკუმის დაზიანების შემთხვევაში. იმ
-              შემთხვევაში, თუ მოდული დაზიანდა, ჩვენ უზრუნველვყოფთ მის
-              ტექ-ინსპექტირებას.
-            </p>
+            <h2 class="parts-subheading">
+              სადაზღვევო სერვისი
+              <div class="drop-down-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#fff"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+            </h2>
+            <div class="more-content">
+              <p>
+                მეღვინეებს საშუალებას მისცემს, მობილური აპლიკაციის მეშვეობით
+                დისტანციურად მართონ მოწყობილობა, აკონტროლონ ქვევრში წნევის დონე
+                და დაუყოვნებლივ მიიღონ ინფორმაცია ვაკუუმის დაზიანების
+                შემთხვევაში. იმ შემთხვევაში, თუ მოდული დაზიანდა, ჩვენ
+                უზრუნველვყოფთ მის ტექ-ინსპექტირებას.
+              </p>
+            </div>
           </div>
         </section>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="images/tavsaxuri.webp"
+                alt="wineguard roof"
+              />
+              <div class="content">
+                <h2 class="parts-subheading">
+                  ჭკვიანი თავსახური
+                  <div class="drop-down-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#fff"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </div>
+                </h2>
+                <div class="more-content">
+                  <p>
+                    შუშის გამჭირვალე დისკი, რომელიც რეზინის რგოლით მჭიდროდ ეცობა
+                    ქვევრს მასში ვაკუუმის შესანარჩუნებლად. იგი აღჭურვილია წნევის
+                    სენსორით და გადამცემი მოდულით, რათა მოგვაწოდოს ინფორმაცია
+                    მობილურ აპლიკაციაზე და ავარიულ შემთხვევაში თავად მიიღოს
+                    გადაწყვეტილება ვაკუუმის ჩართვასთან დაკავშირებით
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="images/tumbo.webp"
+                alt="wineguard tumbo"
+              />
+              <div class="content">
+                <h2 class="parts-subheading">
+                  მულტი ტუმბო
+                  <div class="drop-down-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#fff"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </div>
+                </h2>
+                <div class="more-content">
+                  <p>
+                    მოწყობილება, რომელიც ქვევრიდან ამოტუმბავს ჰაერს, უზრუნველოფს
+                    ვაკუუმის შექმნას და მის შენარჩუნებას. შეგვიძლია ერთდროულად
+                    დავუკავშოროთ რამდენიმე თავსახურს, შესაბამისად, ამოვტუმბოთ
+                    ჰაერი რამდენიმე ქვევრიდან
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="swiper-image"
+                src="images/app.webp"
+                alt="wineguard app"
+              />
+              <div class="content">
+                <h2 class="parts-subheading">
+                  სადაზღვევო სერვისი
+                  <div class="drop-down-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#fff"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </div>
+                </h2>
+                <div class="more-content">
+                  <p>
+                    მეღვინეებს საშუალებას მისცემს, მობილური აპლიკაციის მეშვეობით
+                    დისტანციურად მართონ მოწყობილობა, აკონტროლონ ქვევრში წნევის
+                    დონე და დაუყოვნებლივ მიიღონ ინფორმაცია ვაკუუმის დაზიანების
+                    შემთხვევაში. იმ შემთხვევაში, თუ მოდული დაზიანდა, ჩვენ
+                    უზრუნველვყოფთ მის ტექ-ინსპექტირებას.
+                  </p>
+                </div>
+              </div>
+            </div>
+            ...
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="swiper-scrollbar"></div>
+        </div>
       </section>
 
       <!-- Three -->
@@ -320,9 +505,11 @@
       <section id="cta" class="wrapper style4">
         <div class="inner">
           <header>
-            <h2>დაიცავით ღვინო WineGuard-ით</h2>
-            მოდულის დაზიანების შემთხვევაში ჩვენ უზრუნველოფთ მის
-            ტექ-ინსპექტირებას
+            <h2 class="inner-heading">დაიცავით ღვინო WineGuard-ით</h2>
+            <p class="inner-paragraph">
+              მოდულის დაზიანების შემთხვევაში ჩვენ უზრუნველოფთ მის
+              ტექ-ინსპექტირებას
+            </p>
           </header>
           <ul class="actions stacked">
             <li><a href="#" class="button-order">შეუკვეთე</a></li>

@@ -2689,21 +2689,23 @@ button:disabled,
   z-index: -1;
 }
 
-.button-order:hover {
-  color: #ffffff;
-  border: 1px solid #39bda7;
-}
+@media (min-width: 980px) {
+  .button-order:hover {
+    color: #ffffff;
+    border: 1px solid #39bda7;
+  }
 
-.button-order:hover:before {
-  top: -35%;
-  background-color: #39bda7;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
+  .button-order:hover:before {
+    top: -35%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
 
-.button-order:hover:after {
-  top: -45%;
-  background-color: #39bda7;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  .button-order:hover:after {
+    top: -45%;
+    background-color: #39bda7;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
 }
 
 /* Features */
@@ -3972,7 +3974,7 @@ body.is-preload #banner:after {
 
 @media screen and (max-width: 736px) {
   #cta .inner .actions {
-    max-width: none;
+    /* max-width: none; */
   }
 }
 
@@ -4165,6 +4167,7 @@ body.landing #page-wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 0;
+  /* filter: blur(1px); */
 }
 
 body.landing #footer {
@@ -4226,19 +4229,6 @@ body.is-mobile.landing #footer {
 .phone-icon {
   width: 20px;
   height: 20px;
-}
-
-.parts-heading {
-  padding: 60px 0 40px;
-  margin: 0;
-  text-align: center;
-  font-size: 24px;
-  letter-spacing: 1px;
-  /* background-color: #273038; */
-}
-
-.parts-subheading {
-  letter-spacing: 1px;
 }
 
 .wineguard-logo {
@@ -4418,4 +4408,171 @@ body.is-mobile.landing #footer {
   .fb-logo {
     font-size: 22px;
   }
+}
+
+.content {
+  position: relative;
+}
+
+.parts-heading {
+  padding: 60px 0 40px;
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.parts-subheading {
+  position: relative;
+  letter-spacing: 1px;
+  border: 1px solid #ffffff47;
+  padding: 10px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.swiper {
+  display: none;
+}
+
+.more-image {
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+@media (min-width: 980px) {
+  .parts-subheading:hover,
+  .parts-subheading:active {
+    background-color: #ffffff1f;
+  }
+}
+
+@media (max-width: 980px) {
+  .inner-header {
+    line-break: strict;
+  }
+
+  .inner-paragraph {
+    margin-bottom: 30px;
+  }
+  .spotlight {
+    display: none;
+  }
+
+  .swiper {
+    display: block;
+  }
+
+  .swiper-slide {
+    text-align: center;
+  }
+
+  .content {
+    margin: 50px auto;
+    max-width: 700px;
+  }
+  .swiper-image {
+    object-fit: cover;
+    width: 60%;
+    aspect-ratio: 16/9;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 150px;
+    color: #00f0ff;
+  }
+}
+
+@media (max-width: 600px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 100px;
+  }
+  .parts-heading {
+    font-size: 1.1em;
+  }
+  #footer h1 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 450px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 75px;
+  }
+}
+
+.more-content {
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 500ms;
+}
+
+.more-content p {
+  padding: 0 20px 15px;
+  margin: 0;
+}
+
+@-webkit-keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+.more-content.show {
+  max-height: 1000px;
+  pointer-events: auto;
+}
+
+.more-content.show p {
+  animation: scale-in-ver-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: scale-in-ver-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+}
+
+.drop-down-icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  translate: 0 -50%;
+  transition: all 500ms;
+}
+
+.drop-down-icon.show {
+  transform: rotate(180deg);
 }
