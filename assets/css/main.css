@@ -4485,10 +4485,17 @@ body.is-mobile.landing #footer {
   }
 }
 
+@media (max-width: 740px) {
+  .content {
+    max-width: 500px;
+  }
+}
+
 @media (max-width: 600px) {
   .swiper-button-prev,
   .swiper-button-next {
     top: 100px;
+    display: none;
   }
   .parts-heading {
     font-size: 1.1em;
@@ -4496,12 +4503,14 @@ body.is-mobile.landing #footer {
   #footer h1 {
     font-size: 1.3em;
   }
+  .content {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 450px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    top: 75px;
+  .content {
+    max-width: 300px;
   }
 }
 
@@ -4575,4 +4584,8 @@ body.is-mobile.landing #footer {
 
 .drop-down-icon.show {
   transform: rotate(180deg);
+}
+
+.inner-heading {
+  line-break: strict;
 }
