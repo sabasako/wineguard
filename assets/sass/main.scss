@@ -4,9 +4,6 @@
 @import "libs/vendor";
 @import "libs/breakpoints";
 @import "libs/html-grid";
-@import "fontawesome-all.min.css";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
-
 // Breakpoints.
 
 @include breakpoints(
@@ -225,7 +222,6 @@ input,
 select,
 textarea {
   color: _palette(fg);
-  font-family: _font(family);
   font-size: 15pt;
   font-weight: _font(weight);
   letter-spacing: _size(letter-spacing);
@@ -363,7 +359,6 @@ blockquote {
 code {
   background: _palette(border-bg);
   border-radius: 3px;
-  font-family: _font(family-fixed);
   font-size: 0.9em;
   letter-spacing: 0;
   margin: 0 0.25em;
@@ -372,7 +367,6 @@ code {
 
 pre {
   -webkit-overflow-scrolling: touch;
-  font-family: _font(family-fixed);
   font-size: 0.9em;
   margin: 0 0 _size(element-margin) 0;
 
@@ -689,7 +683,6 @@ input[type="radio"] {
 
   &.brands {
     &:before {
-      font-family: "Font Awesome 5 Brands";
     }
   }
 

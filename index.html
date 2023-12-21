@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WineGuard</title>
+    <title>&nbsp;WineGuard</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -17,6 +17,7 @@
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/animateOnScroll.js"></script>
   </head>
   <body class="landing is-preload">
     <div class="modal-background"></div>
@@ -154,14 +155,14 @@
        </ul>
         <div class="inner">
           <header class="major">
-            <h2>დაიცავით ღვინო WineGuard-ით</h2>
-            <p>
+            <h2 class="hidden">დაიცავით ღვინო WineGuard-ით</h2>
+            <p class="hidden">
               ელექტრონულად მართვადი ქვევრის თავსახური,<br />
               რომელიც შეგიძლია, ტელეფონიდან მართო
             </p>
           </header>
           <ul class="icons major">
-            <li>
+            <li class="hidden">
               <span class="icon major style3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +187,7 @@
                 </svg>
               </span>
             </li>
-            <li>
+            <li class="hidden">
               <span class="icon major style1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -211,7 +212,7 @@
                 </svg>
               </span>
             </li>
-            <li>
+            <li class="hidden">
               <span class="icon major style2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -241,10 +242,10 @@
 
       <!-- Two -->
       <section id="two" class="wrapper alt style2">
-        <h1 class="parts-heading">
+        <h1 class="parts-heading hidden">
           ვაკუმური თავსახურის შემადგენელი ნაწილებია:
         </h1>
-        <section class="spotlight">
+        <section class="spotlight hidden">
           <div class="image">
             <img class="more-image" src="images/tavsaxuri.webp" alt="" />
           </div>
@@ -279,7 +280,7 @@
             </div>
           </div>
         </section>
-        <section class="spotlight">
+        <section class="spotlight hidden">
           <div class="image">
             <img class="more-image" src="images/tumbo.webp" alt="" />
           </div>
@@ -313,7 +314,7 @@
             </div>
           </div>
         </section>
-        <section class="spotlight">
+        <section class="spotlight hidden">
           <div class="image">
             <img class="more-image" src="images/notification.webp" alt="" />
           </div>
@@ -348,7 +349,7 @@
             </div>
           </div>
         </section>
-        <div class="swiper">
+        <div class="swiper hidden">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img
@@ -478,7 +479,7 @@
           </svg>
       </div>
       <div class="wave-background-match"></div>
-        <div class="price-container tavsaxuri">
+        <div class="price-container hidden">
           <div class="price">
             <h3 class="price-heading">ჭკვიანი თავსახური</h3>
             <p class="price-text">800ლ</p>
@@ -565,7 +566,7 @@
             </ul>
           </div>
         </div>
-        <div class="price-container tavsaxuri">
+        <div class="price-container hidden">
           <div class="price">
             <h3 class="price-heading">ტუმბო</h3>
             <p class="price-text">800-2000ლ</p>
@@ -673,7 +674,7 @@
             </ul>
           </div>
         </div>
-        <div class="price-container tavsaxuri">
+        <div class="price-container hidden">
           <div class="price">
             <h3 class="price-heading">მეთვალყურეობის სერვისი</h3>
             <p class="price-text">40ლ / თვეში</p>
@@ -762,95 +763,36 @@
         </div>
       </section>
 
-      <!-- Three -->
-      <!-- <section id="three" class="wrapper style3 special">
-        <div class="inner">
-          <header class="major">
-            <h2>Accumsan mus tortor nunc aliquet</h2>
-            <p>
-              Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-              eleifend<br />
-              fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-              ullamcorper.
-            </p>
-          </header>
-          <ul class="features">
-            <li class="icon fa-paper-plane">
-              <h3>Arcu accumsan</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
-              </p>
-            </li>
-            <li class="icon solid fa-laptop">
-              <h3>Ac Augue Eget</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
-              </p>
-            </li>
-            <li class="icon solid fa-code">
-              <h3>Mus Scelerisque</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
-              </p>
-            </li>
-            <li class="icon solid fa-headphones-alt">
-              <h3>Mauris Imperdiet</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
-              </p>
-            </li>
-            <li class="icon fa-heart">
-              <h3>Aenean Primis</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
-              </p>
-            </li>
-            <li class="icon fa-flag">
-              <h3>Tortor Ut</h3>
-              <p>
-                Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-                tincidunt nullam amet leo Aenean ligula consequat consequat.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section> -->
-
       <!-- CTA -->
       <section id="cta" class="wrapper style4">
         <div class="inner">
           <header>
-            <h2 class="inner-heading">დაიცავით ღვინო WineGuard-ით</h2>
-            <p class="inner-paragraph">
+            <h2 class="inner-heading hidden">დაიცავით ღვინო WineGuard-ით</h2>
+            <p class="inner-paragraph hidden">
               მოდულის დაზიანების შემთხვევაში ჩვენ უზრუნველოფთ მის
               ტექ-ინსპექტირებას
             </p>
           </header>
           <ul class="actions stacked">
-            <li><a href="#" class="button-order">შეუკვეთე</a></li>
-            <li><a href="#two" class="button fit">გაიგე მეტი</a></li>
+            <li class="hidden"><a href="#" class="button-order">შეუკვეთე</a></li>
+            <li class="hidden"><a href="#two" class="button fit">გაიგე მეტი</a></li>
           </ul>
         </div>
       </section>
 
       <!-- Footer -->
       <footer id="footer">
-        <h1>დაგვიკავშირდით</h1>
+        <h1 class="hidden">დაგვიკავშირდით</h1>
         <ul class="icons">
-          <li>
+          <li class="hidden">
             <a
               href="https://www.facebook.com/profile.php?id=61554386997954"
               target="_blank"
-              class="icon brands fa-facebook-f"
-              ><span class="label">Facebook</span></a
+              class="icon brands facebook-logo-link"
+              ><svg class="facebook-logo" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path></svg></a
             >
           </li>
-          <li class="phone">
+          <li class="phone hidden">
             <a href="tel:+995599005512 " class="phone-link">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -870,7 +812,7 @@
             </a>
           </li>
         </ul>
-        <ul class="copyright">
+        <ul class="copyright hidden">
           <li>
             &copy;
             <script>
